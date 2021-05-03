@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookinfo-app-syncwave
+spec:
+  destination:
+    namespace: bookinfo-app
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: bookinfo-app/overlays/k8s
+    repoURL: https://github.com/rcarrata/rcs-apps
+    targetRevision: syncwave
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

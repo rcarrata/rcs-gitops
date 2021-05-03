@@ -10,7 +10,7 @@ spec:
   source:
     path: bookinfo-app/overlays/k8s
     repoURL: https://github.com/rcarrata/rcs-apps
-    targetRevision: syncwave
+    targetRevision: syncwaves
   syncPolicy:
     automated:
       prune: true

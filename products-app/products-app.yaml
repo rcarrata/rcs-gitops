@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bookinfo-app
+  name: products-app
 spec:
   destination:
-    namespace: bookinfo-app
+    namespace: products
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: bookinfo-app/overlays/ocp4-dev
+    path: products-app/overlays/ocp4-dev
     repoURL: https://github.com/rcarrata/rcs-apps
     targetRevision: main
   syncPolicy:

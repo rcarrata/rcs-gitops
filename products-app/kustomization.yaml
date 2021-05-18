@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: openshift-gitops
 
 resources:
-- bookinfo-app.yaml
+- products-app.yaml

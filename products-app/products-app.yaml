@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: products-app/overlays/ocp4-dev
+    path: products-app/overlays/dev
     repoURL: https://github.com/rcarrata/rcs-apps
     targetRevision: main
   syncPolicy:
